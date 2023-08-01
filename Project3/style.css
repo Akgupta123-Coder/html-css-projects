@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+.hero-section{
+    background-image: url("developer.png");
+    min-height: 100vh;
+   
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.text-container{
+    color: white;
+    margin: 0 auto;
+    max-width: 900px;
+    padding-left: 16px;
+    padding-top: 64px;
+}
+.lg_text{
+    font-size: 74px;
+    font-weight: 400;
+}
+.black-box{
+    background-color: black;
+    padding: 20px;
+   
+}
+.black-box h2{
+    font-weight: 400;
+    font-size: 70px;
+    color: white;
+    text-align: center;
+}
+.black-box h2 span{
+    font-size: 96px;
+    font-weight: 400;
+}
+.work{
+    padding: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card{
+    max-width: 320px;
+    min-height: 350px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+}
+.card:hover{
+    transition: 0.2s ease-in-out;
+    transform: scale(1.03);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.6);
+}
+.image-container img{
+    width:100%;
+}
+.card-container{
+    padding: 10px;
+}
+.bottom-section{
+  
+    display: flex;
+    
+
+}
+.contact-section{
+    padding: 20px;
+   
+   
+    background-color: green;
+    color: white;
+}
+.contact-section h2,.about-section h2{
+    font-size: 40px;
+}
+.contact-section p{
+    color: white;
+    padding: 5px;
+    text-align: left;
+}
+.about-section{
+    
+    color: white;
+    padding: 20px;
+   
+  
+    background-color: maroon;
+}
+.about-section p{
+    color: whitesmoke;
+    padding: 5px;
+    text-align: left;
+    
+}
+.footer-section{
+    background-color: black;
+    padding: 20px;
+}
+.footer-section marquee{
+    max-width: 100%;
+    min-height: 100%;
+    direction:left;
+    color: white;
+    text-transform: uppercase;
+}
+@media screen and  (max-width:1025px) {
+    .work{
+        display: flex;
+        flex-wrap: wrap;
+        gap:10px;
+    }
+}
+@media screen and (max-width:786px) {
+    
+    .hero-section{
+        min-height: 50vh;
+
+    }
+    .text-container{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 32px;
+    }
+    .black-box h2{
+        font-size: 24px;
+    }
+    .black-box h2 span{
+        font-size: 32px;
+    }
+    .work{
+        display: flex;
+        flex-wrap: wrap;
+        gap:20px;
+    }
+}
+@media screen and (max-width:446px){
+    .bottom-section{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:360px){
+       
+        .card{
+            
+            max-width: 300px;
+            min-height: 350px;
+           
+        }
+}

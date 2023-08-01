@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --purple500:#281154;
+    --purple300:#270082;
+    --purple600:#1b0058;
+    --red600:#dc0000;
+    --body:#f9f6ff;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    font-size: 1.6rem;
+}
+
+.contanier{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+header{
+    background-color: var(--purple300);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    padding: 10px 10px;
+}
+.logo{
+    font-size: 32px;
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+
+}
+nav ul li{
+    color: white;
+}
+nav ul li:hover{
+    border-bottom: 2px solid white;
+    transition: 0.2s ease-in-out;
+}
+.hero-section{
+    background-image: url('hero\ \(2\).png');
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.hero-section .contanier{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+.hero-section .contanier h1{
+    font-size: 9.6rem;
+}
+.hero-section .contanier h3{
+    font-size: 3.2rem;
+}
+.music-section{
+    padding-top: 50px;
+    background-color: var(--purple500);
+}
+.music-section .contanier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+.music-section .contanier button{
+    background-color: var(--red600);
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+.music-section .contanier button::before{
+    cursor: pointer;
+    border-radius: 10px;
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transition: 1s ease-in-out;
+    transform-origin: left;
+    z-index: -1;
+}
+.music-section .contanier button:hover::before{
+    transform: scaleX(1.02);
+}
+.music-section .contanier button:hover{
+    color: black;
+    font-weight: 500;
+}
+.image img{
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+    max-width: 100%;
+}
+.about-section{
+    padding-top: 500px;
+    display: grid;
+    place-items: center;
+}
+.about-section .contanier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+}
+.about-section .contanier p{
+    color: gray;
+    font-weight: 10;
+}
+.about-section .contanier button{
+    background-color: var(--purple300);
+    padding: 10px 15px;
+    border: none;
+    transition: 0.2s ease-in-out;
+    color: white;
+    border-radius: 10px;
+}
+.mac-image img{
+    padding-top: 40px;
+    max-width: 100%;
+}
+.video-section{
+    margin-top: 50px;
+    background-image: url('video.png');
+    background-position: center;
+    
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+.video-section .contanier{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+.gift-section{
+    margin-top: 60px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 20px;
+}
+.gift-section .contanier{
+    display: flex;
+    justify-content: space-between;
+    gap:30px;
+}
+.gift-image img{
+    min-width: 100%;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.text p{
+    color: gray;
+}
+
+.gift-section .contanier button{
+    align-self: flex-start;
+    background-color: var(--purple300);
+    padding: 10px 15px;
+    border: none;
+    color: white;
+}
+.footer{
+    margin-top: 60px;
+    background-color: var(--purple600);
+}
+.footer .contanier{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.footer .contanier .t1 h3{
+    border-bottom: 2px solid white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.foot{
+    padding: 20px;
+    background-color: var(--purple300);
+    text-align: center;
+    color: white;
+}
+.music-section{
+    scroll-margin: 60px;
+}
+.gift-section{
+    scroll-margin: 140px;
+}
+
+@media (max-width:768px){
+
+    html{
+        font-size: 40%;
+    }
+    nav ul{
+        display: none;
+    }
+    nav .menu-bar i{
+        font-size: 24px;
+    }
+    .footer .contanier{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+   .gift-image img{
+    width: 40rem;
+   }
+}
+@media (max-width:550px){
+
+        .gift-section .contanier{
+            display: flex;
+            flex-direction: column;
+        }
+        .gift-image img{
+            max-width: 100%;;
+        }
+        .text{
+            text-align: left;
+            padding: 20px;
+        }
+}
+@media (min-width:768px){
+
+    .menu-bar{
+        display: none;
+    }
+    
+}
+@media (max-width:608px){
+
+    .image img{
+        top: 200px;
+        margin-top: -220px;
+        max-width: 100%;
+    }
+    .about-section{
+        padding-top: 250px;
+    }
+}
+
+

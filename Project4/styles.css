@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+#wrapper{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.1);  
+}
+.img-section img{
+    max-width: 100%;
+    margin-left: 10px;
+}
+.icon-section a{
+    color: black;
+    font-size: 35px;
+    margin-right: 25px;
+}
+.hero-section{
+    padding:10px;
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+}
+.img-sections img{
+    max-width: 100%;
+}
+.text-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+   
+   
+   gap:25px
+}
+.text-section span{
+    background-color: green;
+    align-self: flex-start;
+    color: white;
+   padding: 5px;
+    
+}
+.text-section .p1{
+    font-size: 35px;
+    font-weight: bold;
+   
+}
+.text-section button{
+    cursor: pointer;
+    align-self: flex-start;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: none;
+    
+    border-radius: 10px;
+}
+.text-section button:hover{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 5px red;
+}
+.content-section{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    box-shadow: 5px 5px 5px rgba(1,1,1,0.1);
+}
+.card:hover{
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+.divider{
+    border: 2px solid rgba(1,1,1,0.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.menu-section{
+    margin: 0 auto;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:50px;
+
+}
+.text-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+
+}
+.text-part p{
+    background-color: green;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+}
+.text-part h3{
+    margin-bottom: 20px;
+}
+
+.grid-img{
+    display: grid;
+    gap: 10px;
+
+    grid-template-areas:
+    "i1 i1 i2 i3"
+    "i1 i1 i2 i7"
+    "i4 i5 i6 i7";
+}
+.item-1{
+    grid-area: i1;
+}
+.item-2{
+    grid-area: i2;
+}
+.item-3{
+    grid-area: i3;
+}
+.item-4{
+    grid-area: i4;
+}
+.item-5{
+    grid-area: i5;
+}
+.item-6{
+    grid-area: i6;
+}
+.item-7{
+    grid-area: i7;
+}
+
+.grid-img img{
+    border-radius: 20px;
+    filter: grayscale(1);
+    max-width: 100%;
+}
+.item-1:hover img{
+    filter: grayscale(0);
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+.item-2:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.item-3:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.item-4:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.item-5:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.item-6:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+.item-7:hover img{
+    filter: grayscale(0);
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+}
+
+.footer-section{
+    padding: 25px;
+    background-color: bisque;
+    display: flex;
+    justify-content: space-around;
+}
+.main-link{
+    display: flex;
+    flex-direction: column;
+}
+.main-link h4{
+    margin-bottom: 10px;
+}
+.support{
+    display: flex;
+    flex-direction: column;
+}
+.support h4{
+    margin-bottom: 10px;
+}
+.ico-section{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+}
+.ico-section a{
+    color: black;
+    font-size: x-large;
+    
+}
+@media screen and (max-width:769px){
+    .img-section img{
+        max-width: 70%;
+    }
+    .icon-section a{
+        font-size: 20px;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-section{
+        text-align: left;
+    }
+   
+    .content-section{
+        display: flex;
+        flex-direction: column;
+        gap:35px;
+    }
+    .grid-img img{
+        max-width: 100%;
+    }
+    .footer-section{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+}
